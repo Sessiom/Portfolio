@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    font-family: tahoma, sans-serif;
+  }
+  
+  :root {
+    --color1: #2A2B2E;
+    --color2: #5A5A66;
+    --color3: #A4C2A8;
+    --color4: #ACEB98;
+    --color5: #87FF65;
+    --color6: #EFEFFF;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+  }
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: var(--color1);
+  }
+  a{
+    text-decoration: none;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 20px 5vw 20px 5vw;
+    color: var(--color6);
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--color2)
+  }
+  
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(
+      45deg, 
+      var(--color1), 
+      var(--color5)
+      );
+    height: 100vh;
+  }
+  
+  .welcome-section > h1 {
+    color: var(--color6);
+  }
+  
+  .project-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--color3);
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    width: 200px;
+    background-color: var(--color2)
+  }
+  .img-container {
+    height: 90%;
+    width: 100%;
+  }
+  
+  .img-container > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-container > a {
+    text-decoration: none; 
+    color: var(--color6);
+    font-weight: bold;
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  
+  .contact-section {
+    background-color: var(--color2) 
+  }
+  
+  #profile-link {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--color5)
+  }
+  
+  @media screen and (max-width: 700px) {
+  
+  .project-container {
+    flex-direction: column;
+  
+  }
+  
+  }
+  
